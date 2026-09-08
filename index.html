@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <title>paperly</title>
+  <title>paperdeskd</title>
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='white'/%3E%3C/svg%3E" />
 
@@ -129,8 +129,6 @@
       margin: 0 auto;
     }
 
-    /* NAV */
-
     .nav {
       position: sticky;
       top: 0;
@@ -185,8 +183,6 @@
     @keyframes pulse {
       50% { opacity: .35; transform: scale(.75); }
     }
-
-    /* HERO */
 
     .hero {
       padding: 86px 0 42px;
@@ -243,8 +239,6 @@
         transform: translateY(0);
       }
     }
-
-    /* UPLOAD */
 
     .workspace {
       padding: 22px 0 70px;
@@ -358,8 +352,6 @@
     #fileInput {
       display: none;
     }
-
-    /* EDITOR */
 
     .editor {
       margin-top: 18px;
@@ -593,8 +585,6 @@
       background: rgba(255,255,255,.055);
     }
 
-    /* SETTINGS */
-
     .settings {
       padding: 20px;
       align-self: start;
@@ -810,8 +800,6 @@
       line-height: 1.45;
     }
 
-    /* EMPTY */
-
     .empty {
       padding: 40px 20px;
       text-align: center;
@@ -825,8 +813,6 @@
       margin-bottom: 7px;
       color: #dddde2;
     }
-
-    /* FEATURES */
 
     section.info-section {
       padding: 80px 0;
@@ -898,8 +884,6 @@
       font-size: 13px;
     }
 
-    /* HOW IT WORKS */
-
     .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -930,8 +914,6 @@
       line-height: 1.6;
       font-size: 13px;
     }
-
-    /* FAQ */
 
     .faq-wrap {
       max-width: 850px;
@@ -1023,8 +1005,6 @@
       transform: rotate(45deg);
     }
 
-    /* FOOTER */
-
     footer {
       padding: 50px 0 35px;
       border-top: 1px solid rgba(255,255,255,.06);
@@ -1056,8 +1036,6 @@
       font-size: 11px;
     }
 
-    /* TOAST */
-
     .toast {
       position: fixed;
       z-index: 100;
@@ -1083,8 +1061,6 @@
       opacity: 1;
       transform: translate(-50%, 0);
     }
-
-    /* MOBILE */
 
     @media (max-width: 900px) {
       .editor.visible {
@@ -1267,10 +1243,11 @@
 
   <nav class="nav">
     <div class="container nav-inner">
-      <div class="wordmark">paperly</div>
+      <div class="wordmark">paperdeskd</div>
       <div class="nav-pill">
+       simple as simple run
         <span class="status-dot"></span>
-        Runs in your browser
+        
       </div>
     </div>
   </nav>
@@ -1296,7 +1273,6 @@
     <section class="workspace">
       <div class="container">
 
-        <!-- UPLOAD -->
         <div class="upload-card glass">
           <div class="dropzone" id="dropzone">
             <div class="upload-icon">
@@ -1331,7 +1307,6 @@
           />
         </div>
 
-        <!-- EDITOR -->
         <div class="editor" id="editor">
 
           <section class="panel pages-panel">
@@ -1370,7 +1345,6 @@
             </button>
           </section>
 
-          <!-- SETTINGS -->
           <aside class="panel settings">
             <h3>PDF settings</h3>
             <p class="settings-sub">
@@ -1474,7 +1448,7 @@
                 id="pdfAuthor"
                 type="text"
                 maxlength="100"
-                placeholder="paperly"
+                placeholder="paperdeskd"
               />
             </div>
 
@@ -1488,8 +1462,8 @@
                 id="fileName"
                 type="text"
                 maxlength="100"
-                value="paperly-document"
-                placeholder="paperly-document"
+                value="paperdeskd-document"
+                placeholder="paperdeskd-document"
               />
             </div>
 
@@ -1507,7 +1481,6 @@
       </div>
     </section>
 
-    <!-- FEATURES -->
     <section class="info-section">
       <div class="container">
         <div class="section-kicker">Built for real documents</div>
@@ -1518,7 +1491,7 @@
         </h2>
 
         <p class="section-description">
-          paperly isn't just a converter. It gives you a small,
+          paperdeskd isn't just a converter. It gives you a small,
           focused workspace for turning a pile of images into
           something you can actually send, save or print.
         </p>
@@ -1581,7 +1554,6 @@
       </div>
     </section>
 
-    <!-- HOW -->
     <section class="info-section">
       <div class="container">
         <div class="section-kicker">Simple workflow</div>
@@ -1622,7 +1594,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="info-section" id="faq">
       <div class="container">
         <div class="section-kicker">Questions</div>
@@ -1635,7 +1606,7 @@
 
           <article class="faq-item">
             <button class="faq-button" type="button">
-              <span>Does paperly upload my images?</span>
+              <span>Does paperdeskd upload my images?</span>
               <span class="faq-icon"></span>
             </button>
 
@@ -1644,7 +1615,7 @@
                 <p>
                   No. The conversion happens in your browser. Your
                   selected images are processed locally and are not
-                  sent to a paperly server.
+                  sent to a paperdeskd server.
                 </p>
               </div>
             </div>
@@ -1652,14 +1623,14 @@
 
           <article class="faq-item">
             <button class="faq-button" type="button">
-              <span>Can I use paperly on my phone?</span>
+              <span>Can I use paperdeskd on my phone?</span>
               <span class="faq-icon"></span>
             </button>
 
             <div class="faq-answer">
               <div class="faq-answer-inner">
                 <p>
-                  Yes. paperly is designed to work on phones and
+                  Yes. paperdeskd is designed to work on phones and
                   tablets. Select images directly from your gallery
                   and build your PDF without using a camera feature.
                 </p>
@@ -1693,7 +1664,7 @@
             <div class="faq-answer">
               <div class="faq-answer-inner">
                 <p>
-                  paperly creates an optimized working copy before
+                  paperdeskd creates an optimized working copy before
                   using an image in the PDF. This reduces unnecessary
                   memory usage, which is particularly important on
                   mobile browsers.
@@ -1712,7 +1683,7 @@
               <div class="faq-answer-inner">
                 <p>
                   Yes. Enter your preferred filename in the PDF
-                  settings panel. paperly automatically adds the
+                  settings panel. paperdeskd automatically adds the
                   .pdf extension when you download the document.
                 </p>
               </div>
@@ -1721,7 +1692,7 @@
 
           <article class="faq-item">
             <button class="faq-button" type="button">
-              <span>Does paperly create actual PDF pages?</span>
+              <span>Does paperdeskd create actual PDF pages?</span>
               <span class="faq-icon"></span>
             </button>
 
@@ -1744,7 +1715,7 @@
   <footer>
     <div class="container footer-inner">
       <div class="footer-copy">
-        Created by
+        created by
         <a
           href="https://www.instagram.com/wholesomefreund"
           target="_blank"
@@ -1774,8 +1745,8 @@
         quality: 0.84,
         pageNumbers: false,
         title: "",
-        author: "paperly",
-        fileName: "paperly-document"
+        author: "paperdeskd",
+        fileName: "paperdeskd-document"
       }
     };
 
@@ -2480,14 +2451,14 @@
         if (state.settings.title) {
           pdf.setProperties({
             title: state.settings.title,
-            author: state.settings.author || "paperly",
-            creator: "paperly"
+            author: state.settings.author || "paperdeskd",
+            creator: "paperdeskd"
           });
         } else {
           pdf.setProperties({
-            title: "paperly document",
-            author: state.settings.author || "paperly",
-            creator: "paperly"
+            title: "paperdeskd document",
+            author: state.settings.author || "paperdeskd",
+            creator: "paperdeskd"
           });
         }
 
@@ -2531,12 +2502,6 @@
               margin,
               state.settings.fit
             );
-
-          /*
-            jsPDF rotation works around the image position,
-            but to make page rotation reliable across browsers,
-            create a temporary canvas with the requested rotation.
-          */
 
           const rotationCanvas =
             document.createElement("canvas");
@@ -2611,11 +2576,6 @@
           let drawHeight = placement.height;
 
           if (state.settings.fit === "fill") {
-            /*
-              Clip-to-page is approximated by placing the image
-              larger than the available box. jsPDF itself doesn't
-              provide a simple clipping rectangle API here.
-            */
             drawWidth = placement.width;
             drawHeight = placement.height;
           }
@@ -2662,7 +2622,7 @@
 
         let filename =
           state.settings.fileName.trim() ||
-          "paperly-document";
+          "paperdeskd-document";
 
         filename = filename
           .replace(/[<>:"/\\|?*\x00-\x1F]/g, "")
@@ -2670,7 +2630,7 @@
           .trim();
 
         if (!filename) {
-          filename = "paperly-document";
+          filename = "paperdeskd-document";
         }
 
         pdf.save(`${filename}.pdf`);
@@ -2701,7 +2661,6 @@
       createPdf
     );
 
-    /* FAQ — entire card/button is tappable */
     document.querySelectorAll(".faq-button").forEach(button => {
       button.addEventListener("click", () => {
         const item =
@@ -2724,7 +2683,6 @@
       });
     });
 
-    /* Keyboard shortcuts */
     document.addEventListener("keydown", event => {
       if (
         (event.metaKey || event.ctrlKey) &&
@@ -2743,7 +2701,6 @@
       }
     });
 
-    /* Prevent accidental page loss when a PDF is being built */
     window.addEventListener("beforeunload", event => {
       if (exportButton.classList.contains("loading")) {
         event.preventDefault();
